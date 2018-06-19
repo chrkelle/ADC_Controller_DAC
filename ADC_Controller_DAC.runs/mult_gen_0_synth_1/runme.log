@@ -1,0 +1,391 @@
+
+*** Running vivado
+    with args -log mult_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mult_gen_0.tcl -notrace
+Command: synth_design -top mult_gen_0 -part xc7a50tfgg484-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1848 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 444.426 ; gain = 98.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 5 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 31 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port SCLR
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 526.617 ; gain = 180.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 526.617 ; gain = 180.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 526.617 ; gain = 180.902
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 800 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a50tfgg484-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 264 instances were transformed.
+  MULT_AND => LUT2: 264 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 840.754 ; gain = 1.129
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tfgg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.runs/mult_gen_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port SCLR
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][23]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][22]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][21]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][20]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][19]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[7].b_is_even.pp_out_reg_reg[7][18]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][23]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][22]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][21]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[6].b_is_even.pp_out_reg_reg[6][20]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][36]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][35]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][34]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][23]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][22]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][21]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[3][20]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][23]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[5].b_is_even.pp_out_reg_reg[5][22]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.pp_gen_pipeline.pp_gen_loop[4].b_is_even.pp_out_reg_reg[4][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][36]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][35]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][34]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][41]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][40]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][39]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][38]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][37]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][36]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][35]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][34]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][33]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][32]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][31]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][30]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][29]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][28]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][27]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][26]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][25]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][24]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    44|
+|2     |LUT2     |   177|
+|3     |LUT4     |   192|
+|4     |MULT_AND |   191|
+|5     |MUXCY    |   192|
+|6     |SRL16E   |     4|
+|7     |XORCY    |   200|
+|8     |FDRE     |   414|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 840.754 ; gain = 180.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 840.754 ; gain = 495.039
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 627 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'mult_gen_0' is not ideal for floorplanning, since the cellview 'luts' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 243 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 52 instances
+  MULT_AND => LUT2: 191 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+117 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 847.859 ; gain = 513.617
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Chris/Desktop/Research/ADC_Controller_DAC/ADC_Controller_DAC.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 847.859 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 18 10:06:04 2018...
